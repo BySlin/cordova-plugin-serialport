@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-serialport" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-serialport (multiserial)</name>
+    <js-module name="serialport" src="www/cordova-plugin-serialport.js">
+        <clobbers target="cordova.plugins.serialport"/>
+    </js-module>
+    <platform name="android">
+        <framework src="tp.xmaihh:serialport:2.1"/>
+
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="cordova-plugin-serialport">
+                <param name="android-package" value="com.byslin.serialport.NativeSerial"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/NativeSerial.java"
+                     target-dir="src/com/byslin/serialport/"/>
+        <source-file src="src/android/SerialPortModel.java"
+                     target-dir="src/com/byslin/serialport/"/>
+        <source-file src="src/android/InterByteTimeoutStickPackageHelper.java"
+                     target-dir="src/com/byslin/serialport/"/>
+    </platform>
+</plugin>

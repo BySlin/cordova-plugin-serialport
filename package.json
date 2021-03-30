@@ -1,0 +1,16 @@
+{
+  "name": "cordova-plugin-serialport",
+  "version": "1.0.0",
+  "description": "a plugin used for communicate with native serialport.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izee/cordova-plugin-serialport.git"
+  },
+  "author": "izee",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/izee/cordova-plugin-serialport/issues"
+  },
+  "homepage": "https://github.com/izee/cordova-plugin-serialport#readme"
+}
